@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MatchingParticipant">
+   <children>
+      <BorderPane prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <center>
+            <TableView fx:id="CompaniesToMatch" prefHeight="238.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="Name" prefWidth="143.0" text="Name" />
+                  <TableColumn fx:id="location" prefWidth="86.0" text="Location" />
+                  <TableColumn fx:id="Involved" minWidth="0.0" prefWidth="121.0" text="Invlolved" />
+                  <TableColumn fx:id="MatchedSkills" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="435.0" text="Matched Skills" />
+               </columns>
+            </TableView>
+         </center>
+         <top>
+            <HBox prefHeight="35.0" prefWidth="767.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="ParicipantName" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="167.287109375">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Cycle" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="25.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Region nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="62.0" />
+                  <Button fx:id="setMatched" alignment="BOTTOM_RIGHT" mnemonicParsing="false" text="Button" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
